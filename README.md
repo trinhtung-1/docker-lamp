@@ -1,11 +1,4 @@
 #  LAMP stack built with Docker Compose
-
-  
-
-![Landing Page](https://preview.ibb.co/gOTa0y/LAMP_STACK.png)
-
-  
-
 A basic LAMP stack environment built using Docker Compose. It consists of the following:
 
 * PHP
@@ -32,7 +25,7 @@ As of now, we have several different PHP versions. Use appropriate php version a
 * Run the `docker-compose up -d`.
 
 ```shell
-git clone https://github.com/sprintcube/docker-compose-lamp.git
+git clone https://github.com/trinhtung-1/docker-lamp.git
 cd docker-compose-lamp/
 cp sample.env .env
 // modify sample.env as needed
