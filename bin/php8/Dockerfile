@@ -90,5 +90,13 @@ libpng-dev && \
 # Enable apache modules
 RUN a2enmod rewrite headers
 
+#nodejs
+RUN apt-get update
+RUN cd ~
+RUN curl -sL https://deb.nodesource.com/setup_16.x -o nodesource_setup.sh
+RUN bash nodesource_setup.sh
+RUN apt-get install -y nodejs
+RUN apt install -y aptitude
+RUN aptitude install -y npm
 # Cleanup
 RUN rm -rf /usr/src/*
